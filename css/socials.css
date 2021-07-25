@@ -1,0 +1,47 @@
+/* Socials */
+
+.socials {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#facebook,
+#insta,
+#redbubble,
+#pinterest,
+#tiktok,
+#mail,
+#twitter,
+#tumblr {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  transition: 0.2s ease-in;
+}
+
+#facebook { background-image: url(../assets/images/socials/FB.png);}
+#insta { background-image: url(../assets/images/socials/insta.png);}
+#redbubble { background-image: url(../assets/images/socials/redbubble.png);}
+#pinterest { background-image: url(../assets/images/socials/pinterest.png);}
+#tiktok { background-image: url(../assets/images/socials/tiktok.png);}
+#mail { background-image: url(../assets/images/socials/mail.png);}
+#twitter { background-image: url(../assets/images/socials/twitter.png);}
+#tumblr { background-image: url(../assets/images/socials/tumblr.png);}
+
+/* Interactivity */
+
+#facebook:hover,
+#insta:hover,
+#redbubble:hover,
+#pinterest:hover,
+#tiktok:hover,
+#mail:hover,
+#twitter:hover,
+#tumblr:hover{
+  scale: 1.1;;
+} 

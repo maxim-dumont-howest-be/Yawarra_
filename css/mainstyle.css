@@ -1,0 +1,189 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #668c4e;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*ANIMATION - HEADER*/
+
+header {
+  width: 100%;
+}
+
+.Yawarra {
+  font-family: "Benne", serif;
+  font-size: 72pt;
+  color: #4b1404;
+  position: absolute;
+  top: 20px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  text-align: center;
+}
+
+.banner-animation-topleft {
+  width: 580px;
+  height: 200px;
+  background: transparent url(../assets/images/sprite_topleft.png) 0 0 no-repeat;
+  animation: grower 1.5s steps(8);
+}
+
+.banner-animation-topright {
+  width: 520px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent url(../assets/images/sprite_topright.png) no-repeat;
+  animation: grower 1.5s steps(8);
+}
+
+@keyframes grower {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -1600px;
+  }
+}
+
+li:hover {
+  padding-bottom: 15px;
+  transition: 0.3s;
+}
+
+/*NAVIGATION BAR*/
+
+nav.topnav {
+  width: 90%;
+  margin: 0 5%;
+}
+
+nav li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  border-bottom: white solid 2px;
+  padding: 10px;
+}
+
+nav li > a {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav li.current {
+  padding-bottom: 15px;
+}
+
+div.Language {
+  position: absolute;
+  right: 5%;
+  padding-top: 10px;
+}
+
+div.Language > a {
+  color: #fcb42f;
+}
+
+main {
+  margin-top: 40px;
+}
+
+/*paragraph Styling*/
+
+section {
+  width: 90%;
+  margin: 20px 5%;
+  background-color: rgb(196, 168, 75);
+  border: sienna solid 2px;
+  border-radius: 5px;
+  min-height: 100px;
+  text-align: justify;
+  padding: 20px;
+}
+
+section:first-of-type {
+  margin-top: 8%;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  text-decoration: underline 2px solid;
+}
+
+/* Main content*/
+
+img#hero {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 40px;
+}
+
+/*Footer*/
+
+/*Queries*/
+
+@media (max-width: 800px) {
+  nav li {
+    width: 100%;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .Yawarra {
+    font-size: 50pt;
+  }
+
+  div#button-back {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  img#hero {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1250px) {
+  section {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  img#hero {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

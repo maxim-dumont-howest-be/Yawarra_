@@ -1,0 +1,106 @@
+
+
+.gallery{
+    width: 70%;
+    margin: 15%;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: repeat(3,700px) repeat(3,450px);
+    grid-gap: 20px;
+}
+
+.gallery a{
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.gallery a:hover{
+    filter:sepia(70%) ;
+    transition: 0.5s;
+}
+
+.wide{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.tall{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.one{background-image: url(../assets/images/cabinet.jpg);}
+
+.two{background-image: url(../assets/images/cicada.jpg);}
+
+.three{background-image: url(../assets/images/forest.jpg);}
+
+.four{background-image: url(../assets/images/fish.jpg);}
+
+.five{background-image: url(../assets/images/rabbit.jpg);}
+
+.six{background-image: url(../assets/images/bench.jpg);}
+
+.seven{background-image: url(../assets/images/Cat_picknick.jpg);}
+
+.eight{background-image: url(../assets/images/alice.jpg);}
+
+.nine{background-image: url(../assets/images/moth.jpg);}
+
+.ten{background-image: url(../assets/images/winged_death.jpg);}
+
+@media screen and (max-width: 1500px) {
+    .gallery{
+        width: 96%;
+        margin: 10% 2%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .gallery{
+        width: 90%;
+        margin: 5%;
+        display: block;
+    }
+
+    .gallery a{
+        display: block;
+        padding-bottom: 10px;
+        min-height: 400px;
+        background-position: top center;
+    }
+
+    .square{
+        height: 700px;
+    }
+
+    .vertical{
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .square{
+        height: 500px;
+    }
+
+    .vertical{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .gallery a{
+        min-height: 200px;
+    }
+    .square{
+        height: 300px;
+    }
+
+    .vertical{
+        height: 400px;
+    }
+}
